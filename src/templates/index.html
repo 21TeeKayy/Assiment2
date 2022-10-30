@@ -1,0 +1,65 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>First Flask App</title>
+    <style>
+    body{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #C0C0C0;
+
+    }
+
+
+    .form{
+      width: 500px;
+      padding:32px;
+      border-radius:10px;
+      box-shadow: 0 4px 16px #ccc;
+        background-color: white;
+    }
+
+    .vvod{
+      border-radius:5px;
+      position: relative;
+      margin-bottom: 32px;
+      letter-spacing: 1px;
+      font-size: 20px;
+      width:100%;
+      padding: 0 0 10px 0;
+      border-bottom:1px solid #e0e0e0;
+      background-color: transparent;
+    }
+    .button{
+
+      letter-spacing: 1px;
+      font-size: 20px;
+      padding: 10px 20px;
+      border:none;
+      border-radius:5px;
+      color:black;
+      position: relative;
+    }
+
+    h1{
+      text-align: center;
+      margin: 0 0 32px 0;
+    }
+
+    </style>
+</head>
+<body>
+
+    <form method="POST" class="form">
+      <h1>
+          Type your NFT's address!
+      </h1>
+      <div class="blok">
+        <input name="text" placeholder="write here" class="vvod">
+        <div style="text-align:center"> <button class="button" input type="submit" >Send</button><div>
+      </div>
+    </form>
+
+
+</body></html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<style>
+body {
+  background-color: white;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.loginbtn {
+  background-color: #C0C0C0;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.loginbtn:hover {
+  background-color: black;
+}
+
+a {
+  color: dodgerblue;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+
+  <a href="index.html">NFT Address</a>
+  <div class="login-container">
+    <form method="POST">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      {% for msg in get_flashed_messages() %}
+        <div class="flash"> {{msg}} </div>
+      {% endfor %}
+      <button class="loginbtn" type="submit">Login</button>
+    </form>
+  </div>
+
+
+</body>
+</html>
